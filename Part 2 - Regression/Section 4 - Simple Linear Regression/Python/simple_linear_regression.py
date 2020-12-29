@@ -1,10 +1,13 @@
 # Simple Linear Regression
 
 # Importing the libraries
-
-install.packages("matplotlib")
-install.packages("reticulate")
-library(reticulate)
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+#install.packages("matplotlib")
+#install.packages("reticulate")
+#library(reticulate)
+#library(reticulate)
 # Importing the dataset
 
 dataset = pd.read_csv('Salary_Data.csv')
