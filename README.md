@@ -66,7 +66,7 @@ or for TensorFlow:
 
 for more details please refer https://github.com/huggingface/transformers
 
-Part 11. Federated learning in Docker and kubernetes
+Part 11. Federated learning PaddlePaddleFL deployment in Docker and kubernetes 
         
         PaddlePaddleFL deployment in Docker and kubernetes
         PaddlePaddleFL deployment in cloud environement
