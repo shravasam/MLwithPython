@@ -23,6 +23,48 @@ finding the python file paths
 reticulate problems
 project directory file paths
 
+Part 7 : Natural Language Processing for PyTorch and TensorFlow 2.0 -Transformers in NLP
+Transformers provides thousands of pretrained models to perform tasks on texts such as classification, information extraction, question answering,       summarization, translation, text generation, etc in 100+ languages. Its aim is to make cutting-edge NLP easier to use for everyone.
+
+
+We use pipeline AI group. Quickly use a pipeline to classify positive versus negative texts.
+    
+    from transformers import pipeline
+
+# Allocate a pipeline for sentiment-analysis
+    classifier = pipeline('sentiment-analysis')
+    classifier('We are very happy to include pipeline into the transformers repository.')
+    [{'label': 'POSITIVE', 'score': 0.9978193640708923}]
+    
+       from transformers import pipeline
+
+# Allocate a pipeline for question-answering
+    question_answerer = pipeline('question-answering')
+    question_answerer({
+     'question': 'What is the name of the repository ?',
+     'context': 'Pipeline have been included in the huggingface/transformers repository'
+    })
+    {'score': 0.5135612454720828, 'start': 35, 'end': 59, 'answer': 'huggingface/transformers'}
+
+To download and use any of the pretrained models on your given task, you just need to use those three lines of codes 
+(PyTorch version):
+
+    from transformers import AutoTokenizer, AutoModel
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    model = AutoModel.from_pretrained("bert-base-uncased")
+    inputs = tokenizer("Hello world!", return_tensors="pt")
+    outputs = model(**inputs)
+
+or for TensorFlow:
+
+    from transformers import AutoTokenizer, TFAutoModel
+    tokenizer = AutoTokenizer.from_pretrained("bert-base-uncased")
+    model = TFAutoModel.from_pretrained("bert-base-uncased")
+    inputs = tokenizer("Hello world!", return_tensors="tf")
+    outputs = model(**inputs)
+
+for more details please refer https://github.com/huggingface/transformers
+
 Part 11. Federated learning in Docker and kubernetes
 
 How to run PaddleFL in Docker.
