@@ -30,15 +30,15 @@ Transformers provides thousands of pretrained models to perform tasks on texts s
 We use pipeline AI group. Quickly use a pipeline to classify positive versus negative texts.
     
     from transformers import pipeline
+#Allocate a pipeline for sentiment-analysis
 
-# Allocate a pipeline for sentiment-analysis
     classifier = pipeline('sentiment-analysis')
     classifier('We are very happy to include pipeline into the transformers repository.')
     [{'label': 'POSITIVE', 'score': 0.9978193640708923}]
     
        from transformers import pipeline
 
-# Allocate a pipeline for question-answering
+#Allocate a pipleline for question-answering
     question_answerer = pipeline('question-answering')
     question_answerer({
      'question': 'What is the name of the repository ?',
