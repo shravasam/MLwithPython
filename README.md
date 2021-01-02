@@ -67,6 +67,11 @@ or for TensorFlow:
 for more details please refer https://github.com/huggingface/transformers
 
 Part 11. Federated learning in Docker and kubernetes
+        
+        PaddlePaddleFL deployment in Docker and kubernetes
+        PaddlePaddleFL deployment in cloud environement
+        PaddlePaddleFL deployment in local environement like in Raspberry Pi4.
+
 
 How to run PaddleFL in Docker.
   
@@ -101,3 +106,11 @@ To resolve erros while installing. please run the below commands.
  
         #Install paddle_fl
          pip install paddle_fl
+
+Optimized models 
+
+Mobilnet : 
+DistilBERT :
+Tensorflow Lite :
+Raspberry Pi4 :
+
