@@ -39,6 +39,7 @@ We use pipeline AI group. Quickly use a pipeline to classify positive versus neg
        from transformers import pipeline
 
 #Allocate a pipleline for question-answering
+
     question_answerer = pipeline('question-answering')
     question_answerer({
      'question': 'What is the name of the repository ?',
